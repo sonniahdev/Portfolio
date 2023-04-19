@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     {% load static %}
+<title>Portfolio</title>
+<meta charset="utf-8">
+<meta name = "format-detection" content = "telephone=no" />
+<link rel="icon" href="{% static "images/favicon.ico" %}">
+<link rel="shortcut icon" href="{% static "images/favicon.ico" %}" />
+<link rel="stylesheet" href="{% static "css/animation.css" %}">
+<link rel="stylesheet" href="{% static "css/port.css" %}">
+<link rel="stylesheet" href="{% static "css/camera.css" %}">
+<link rel="stylesheet" href="{% static "css/contact-form.css" %}">
+<link rel="stylesheet" href="{% static "css/touchTouch.css" %}">
+<link rel="stylesheet" href="{% static "css/style.css" %}">
+  <script src='//maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false'></script>
+<script src="{% static "js/jquery.js" %}"></script>
+<script src="{% static "js/jquery-migrate-1.1.1.js" %}"></script>
+<script src="{% static "js/jquery.easing.1.3.js" %}"></script>
+<script src="{% static "js/script.js" %}"></script>
+<script src="{% static "js/jquery.ui.totop.js" %}"></script>
+<script src="{% static "js/touchTouch.jquery.js" %}"></script>
+<script src="{% static "js/isotope.pkgd.js" %}"></script>
+<script src="{% static "js/TMForm.js" %}"></script>
+<script src="{% static "js/modal.js" %}"></script>
+<script src="{% static "js/camera.js" %}"></script>
+<!--[if (gt IE 9)|!(IE)]><!-->
+<script src="{% static "js/jquery.mobile.customized.min.js" %}"></script>
+<!--<![endif]-->
+<script>
+ $(window).load(function(){
+  $().UItoTop({ easingType: 'easeOutQuart' });
+  $('.gallery .gall_item').touchTouch();
+ });
+ $(document).ready(function(){
+     jQuery('#camera_wrap').camera({
+      loader: false,
+      pagination: true ,
+      minHeight: '500',
+      thumbnails: false,
+      height: '44.42708333333333%',
+      caption: true,
+      navigation: false,
+      fx: 'mosaic'
+    });
+    $('.gallery .gall-item').touchTouch();
+  });
+</script>
+<!--[if lt IE 8]>
+ <div style=' clear: both; text-align:center; position: relative;'>
+   <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+     <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jp" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+   </a>
+</div>
+<![endif]-->
+<!--[if lt IE 9]>
+<script src="{% static "js/html5shiv.js" %}></script>
+<link rel="stylesheet" media="screen" href="{% static "css/ie.css" %}>
+<![endif]-->
+</head>
+<body>
+<div class="texture">
+<!--==============================
+              header
+=================================-->
+<header id="home" class="page">
+  <div class="navigation single-page-nav">
+    <div class="container_12">
+      <div class="grid_12" >
+        <h1 class="logo">
+            <div >
+          <a href="index.html">Njogu</a>
+                </div>
+        </h1>
+        <nav>
+          <ul>
+           <li><a href="#home" class="current">Home</a></li>
+           <li><a href="#portfolio">Portfolio</a></li>
+           <li><a href="#skills">Skills</a></li>
+           <li><a href="#My work">My work</a></li>
+           <li><a href="#Testimonials">Testimonials</a></li>
+           <li><a href="#contacts">Contacts</a></li>
+         </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div id="camera_wrap">
+      <div data-src="{% static "images/slide-2.jpg" %}">
+      <div class="caption fadeIn" style="margin-bottom: 1234px">  <br>
+          Hi i`m Soniah Njogu , <br>a motivated and detailed-oriented
+          individual with a passion for web development. <br>
+          </div>
+    </div>
+       <div data-src="{% static "images/slide-3.jpg" %}">
+      <div class="caption fadeIn"> An Entry level developer,<br>
+       eager to gain practical <br> experience in the field
+           </div>
+            </div>
+    <div data-src="{% static "images/slide-1.jpg" %}">
+      <div class="caption fadeIn"> Although am just starting my journey in this field, <br>
+          I possess a strong foundation in : 1.Css <br>
+          2. HTML <br> 3.BOOTSTRAP <br> 4. Django <br> 5. android.<br>
+</div>
+    </div>
+
+  </div>
+</header>
+<!--=====================
+          Content
+======================-->
+<section class="content">
+  <div class="ic">Portfolio</div>
+  <div class="pad-1">
+    <div class="container_12">
+      <div class="grid_12">
+        <h2>About Me
+          <span>THE BRIEF INTRODUCTION OF MYSELF</span>
+        </h2>
+        <p class="offset__1"> Am a budding web developer with a passion for creating
+        innovative and visually appealing websites. Though I may not have any professional
+            experience in this field yet, <br>I have been investing my time and energy into
+            learning various programming languages and tools to create my own projects</p>
+        <img src="{% static "images/port.jpg" %}" style="height: 356px" alt="" class="fleft">
+        <div class="extra_wrapper">
+          <div class="text-1">
+            Soniah Njogu
+          </div>
+          <div class="text-2 color1">
+            <a href="#">Web developer</a> &bull;
+            <a href="#">Coder</a> &bull;
+
+          </div>
+
+            <p>In additional to coding, am also a strong communicator and collaborator,<br>
+            understanding the importance of working with others to achieve a shared goal.
+            i value feedback and constructive criticism as i believe it is necessary part
+                of the learning process. <br> Overall, i am excited to embark on my journey
+                as a web developer and coder and hope to contribute to the industry in meaningfull ways. </p>
+          <a href="https://drive.google.com/file/d/1bdiqy7S-YpeXWqtkltBteqYV4M6gtrxb/view?usp=share_link" class="btn">Download Resume</a>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+<section id="portfolio" class="page">
+  <div class="container_12">
+    <div class="grid_12" >
+      <h2 class="color2">My Portfolio</h2>
+      <div id="filters" class="button-group">
+        <a href="#" class="btn is-checked" data-filter="*">Show all</a>
+        <a href="#" class="btn" data-filter=".ill">Illustration</a>
+        <a href="#" class="btn" data-filter=".photo">HTML/CSS</a>
+        <a href="#" class="btn" data-filter=".design">Django</a>
+      </div>
+      <div class="el gallery" id="isotope">
+        <div class="element design" STYLE="width: 256px;height: 180px">
+          <div>
+            <a href="{% static "images/Screenshot (1).png" %}" class="gall-item">
+                <img src="{% static "images/Screenshot (2).png" %}" alt=""><span></span></a>
+        </div>
+        </div>
+        <div class="element photo" STYLE="width: 256px;height: 180px">
+          <div>
+            <a href="{% static "images/Screenshot (4).png" %}" class="gall-item">
+                <img src="{% static "images/Screenshot (5).png" %}" alt=""><span></span></a>
+          </div>
+        </div>
+        <div class="element  photo" STYLE="width: 256px;height: 180px">
+          <div>
+            <a href="{% static "images/Screenshot (6).png" %}" class="gall-item">
+                <img src="{% static "images/Screenshot (7).png" %}" alt=""><span></span></a>
+          </div>
+        </div>
+        <div class="clear" STYLE="width: 256px;height: 180px"></div>
+        <div class="element ill" STYLE="width: 256px;height: 180px">
+          <div>
+            <a href="{% static "images/Screenshot (8).png" %}" class="gall-item">
+                <img src="{% static "images/Screenshot (4).png" %}" alt=""><span></span></a>
+          </div>
+        </div>
+        <div class="element ill" STYLE="width: 256px;height: 180px">
+          <div>
+            <a href="{% static "images/Screenshot (10).png" %}" class="gall-item">
+                <img src="{% static "images/Screenshot (11).png" %}" alt=""><span></span></a>
+          </div>
+        </div>
+        <div class="element HTML/CSS" STYLE="width: 256px;height: 180px">
+          <div>
+            <a href="{% static "images/Screenshot (2).png" %}" class="gall-item">
+                <img src="{% static "images/Screenshot (3).png" %}" alt=""><span></span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="clear" STYLE="width: 256px;height: 180px"></div>
+  </div>
+</section>
+<section id="skills" class="page">
+  <div class="container_12">
+    <div class="grid_12">
+      <h2>Skills</h2>
+    </div>
+    <div class="grid_3">
+     <div style="clear:both"></div>
+        <div class="circle">
+          <input class="knob" data-angleOffset="0" value="93" data-fgColor="#2a797b"
+                 data-bgColor="#3a556e" data-width="226" data-height="226" data-thickness=.2>
+        </div>
+      <div class="text-3"><a href="#">HTML</a></div>
+    </div>
+    <div class="grid_3">
+      <div class="circle">
+          <input class="knob" data-angleOffset="0" value="82" data-fgColor="#2a797b"
+                 data-bgColor="#3a556e" data-width="226" data-height="226" data-thickness=.2>
+        </div>
+      <div class="text-3"><a href="#">CSS</a></div>
+    </div>
+    <div class="grid_3">
+      <div class="circle">
+          <input class="knob" data-angleOffset="0" value="90" data-fgColor="#2a797b"
+                 data-bgColor="#3a556e" data-width="226" data-height="226" data-thickness=.2>
+        </div>
+      <div class="text-3"><a href="#">BOOTSRAP</a></div>
+    </div>
+    <div class="grid_3">
+      <div class="circle">
+          <input class="knob" data-angleOffset="0" value="89" data-fgColor="#2a797b"
+                 data-bgColor="#3a556e" data-width="226" data-height="226" data-thickness=.2>
+        </div>
+      <div class="text-3"><a href="#">DJANGO</a></div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</section >
+<section id="My work" class="page">
+  <div class="container_12" style="">
+    <div class="grid_12">
+      <h2>My work</h2>
+      <div class="block-1">
+        <div class="grid_4 alpha">
+          <div class="block-1__left">
+            <h3>2023 - Present</h3>
+            <time  datetime="2023-01-01" class="text-2">March</time>
+            <div class="ta__right">
+              <div class="text-2 color1">CONVID </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="grid_8 omega">
+          <div class="block-2__right">
+            <h3>project description</h3>
+            <div class="text-2">COVID</div>
+            <p>My COVID website is a comprehensive resource for pandemic information, <br>
+                featuring the latest news updates, guidance on prevention measures, <br>
+                and mental health resources. Its user-friendly design and chatbot feature <br>
+                provide users with easy access to accurate information, making it a valuable <br>
+                resource for individuals seeking reliable guidance during this challenging time.</p>
+          </div>
+        </div>
+      </div>
+      <div class="block-1">
+        <div class="grid_4 alpha">
+          <div class="block-1__left">
+            <h3>2023-present</h3>
+            <time  datetime="2014-01-01" class="text-2">April <span>August</span></time>
+            <div class="ta__right">
+              <div class="text-2 color1"></div>
+             Human rights
+            </div>
+          </div>
+        </div>
+        <div class="grid_8 omega">
+          <div class="block-2__right">
+            <h3>Project description</h3>
+            <div class="text-2">Human rights</div>
+            <p>My human rights website is a digital platform dedicated to promoting and
+                protecting human rights. It provides news updates, articles, and resources on
+                a range of human rights issues, including civil liberties, social justice, and equality.
+                The website is designed to be accessible and user-friendly, with easy-to-navigate menus and
+                engaging content that inspires individuals to take action and make a difference.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="clear" ></div>
+  </div>
+</section>
+<section id="Testimonials" class="page" style="background-color: powderblue" >
+  <div class="container_12"  >
+    <div class="grid_12">
+      <h2 class="color2">Testimonials</h2>
+    </div>
+    <div class="grid_4">
+      <blockquote class="bq1">
+        <img src="{% static "images/ttd.jpg" %}"style="width: 130px" alt="">
+        <div class="extra_wrapper">
+          <div class="text-2"><a href="#">Ted</a></div>
+          Soniah is a standout student who consistently demonstrates a deep
+            understanding of this course material and  dedication
+            to her academic persuits <br>.Her contribution to class discussions
+            and assignments are always thoughtful and insightfull. <br>
+            It is a pleasure to have her in my class
+        </div>
+      </blockquote>
+    </div>
+ </div>
+    <div class="clear"></div>
+ 
+</section>
+<section id="contacts" class="page">
+  <div class="container_12">
+    <div class="grid_12">
+      <h2>Get in Touch</h2>
+    </div>
+    <div class="grid_6">
+      <form id="contact-form">
+          <div class="contact-form-loader"></div>
+          <fieldset>
+            <label class="name">
+              <input type="text" name="name" placeholder="Name*:" value="" data-constraints="@Required @JustLetters"  />
+              <span class="empty-message">*This field is required.</span>
+              <span class="error-message">*This is not a valid name.</span>
+            </label>
+            <label class="email">
+              <input type="text" name="email" placeholder="E-mail*:" value="" data-constraints="@Required @Email" />
+              <span class="empty-message">*This field is required.</span>
+              <span class="error-message">*This is not a valid email.</span>
+            </label>
+            <label class="phone">
+              <input type="text" name="phone" placeholder="Telephone:" value="" data-constraints="@Required @JustNumbers" />
+              <span class="empty-message">*This field is required.</span>
+              <span class="error-message">*This is not a valid phone.</span>
+            </label>
+            <label class="message">
+              <textarea name="message" placeholder="Message*:" data-constraints='@Required @Length(min=20,max=999999)'></textarea>
+              <span class="empty-message">*This field is required.</span>
+              <span class="error-message">*The message is too short.</span>
+            </label>
+            <div>
+              <a href="#" class="btn" data-type="submit">submit </a>
+            </div>
+          </fieldset>
+          <div class="modal fade response-message">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                  You message has been sent! We will be in touch soon.
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="grid_6">
+        <p>24/7 support is on for all <a href="http://www.templatemonster.com/" rel="nofollow" class="color1"></a>.</p>
+        <p><a href="http://www.templatetuning.com/" rel="nofollow" class="color1"></a>  <br> </p>
+
+        Telephone: 0759193201<br>
+
+        E-mail: <a href="">soniahnjogu435@gmail.com</a>
+      </div>
+    <div class="clear"></div>
+  </div>
+  <div class="google-map-api">
+    <div id="map-canvas" class="gmap"></div>
+  </div>
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="social-icons">
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-google-plus"></a>
+        <a href="#" class="fa fa-pinterest"></a>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</section>
+</section>
+<!--==============================
+              footer
+=================================-->
+</div>
+<footer id="footer">
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="copyright"> &copy; <span id="copyright-year">2023t</span>| <a href="#">Privacy Policy </a> <br>
+       Website designed by: Soniah Njogu <a href="Soniah Njogu" rel="nofollow"></a>
+      </div>
+    </div>
+  </div>
+  <div class="clear"></div>
+</footer>
+<a href="#" id="toTop" class="fa fa-chevron-up"></a>
+<script src="{% static "js/jquery.singlePageNav.min.js" %}"></script>
+<script>
+  // Prevent console.log from generating errors in IE for the purposes of the demo
+  if ( ! window.console ) console = { log: function(){} };
+  // The actual plugin
+  $('.single-page-nav').singlePageNav({
+      offset: $('.single-page-nav').outerHeight(),
+      filter: ':not(.external)',
+      updateHash: true,
+      beforeStart: function() {
+          console.log('begin scrolling');
+      },
+      onComplete: function() {
+          console.log('done scrolling');
+      }
+  });
+</script>
+<script type="text/javascript">
+          google_api_map_init();
+          function google_api_map_init(){
+            var map;
+            var coordData = new google.maps.LatLng(parseFloat(40.646197), parseFloat(-73.9724068,14));
+            var styleArray = [
+    {
+        "featureType": "water",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#193341"
+            }
+        ]
+    },
+    {
+        "featureType": "landscape",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#2c5a71"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#29768a"
+            },
+            {
+                "lightness": -37
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#406d80"
+            }
+        ]
+    },
+    {
+        "featureType": "transit",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#406d80"
+            }
+        ]
+    },
+    {
+        "elementType": "labels.text.stroke",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#3e606f"
+            },
+            {
+                "weight": 2
+            },
+            {
+                "gamma": 0.84
+            }
+        ]
+    },
+    {
+        "elementType": "labels.text.fill",
+        "stylers": [
+            {
+                "color": "#ffffff"
+            }
+        ]
+    },
+    {
+        "featureType": "administrative",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "weight": 0.6
+            },
+            {
+                "color": "#1a3541"
+            }
+        ]
+    },
+    {
+        "elementType": "labels.icon",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.park",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#2c5a71"
+            }
+        ]
+    }
+]
+            function initialize() {
+              var mapOptions = {
+                zoom: 13,
+                center: coordData,
+                scrollwheel: false,
+                styles: styleArray
+              }
+              var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+            google.maps.event.addDomListener(window, 'resize', function() {
+              map.setCenter(coordData);
+              var center = map.getCenter();
+            });
+          }
+            google.maps.event.addDomListener(window, "load", initialize);
+          }
+      </script>
+              <!--[if IE]><script type="text/javascript" src="{% static "js/excanvas.js" %}>
+</script><![endif]-->
+      <script src="{% static "js/jquery.knob.js" %}"></script>
+<script>
+  $(function($) {
+    $(".knob").knob({
+        change : function (value) {
+            //console.log("change : " + value);
+        },
+        release : function (value) {
+            //console.log(this.$.attr('value'));
+            console.log("release : " + value);
+        },
+        cancel : function () {
+            console.log("cancel : ", this);
+        },
+        /*format : function (value) {
+            return value + '%';
+        },*/
+        draw : function () {
+            // "tron" case
+            if(this.$.data('skin') == 'tron') {
+                this.cursorExt = 0.3;
+                var a = this.arc(this.cv)  // Arc
+                    , pa                   // Previous arc
+                    , r = 1;
+                this.g.lineWidth = this.lineWidth;
+                if (this.o.displayPrevious) {
+                    pa = this.arc(this.v);
+                    this.g.beginPath();
+                    this.g.strokeStyle = this.pColor;
+                    this.g.arc(this.xy, this.xy, this.radius - this.lineWidth, pa.s, pa.e, pa.d);
+                    this.g.stroke();
+                }
+                this.g.beginPath();
+                this.g.strokeStyle = r ? this.o.fgColor : this.fgColor ;
+                this.g.arc(this.xy, this.xy, this.radius - this.lineWidth, a.s, a.e, a.d);
+                this.g.stroke();
+                this.g.lineWidth = 2;
+                this.g.beginPath();
+                this.g.strokeStyle = this.o.fgColor;
+                this.g.arc( this.xy, this.xy, this.radius - this.lineWidth + 1 + this.lineWidth * 2 / 3, 0, 2 * Math.PI, false);
+                this.g.stroke();
+                return false;
+            }
+        }
+    });
+    // Example of infinite knob, iPod click wheel
+    var v, up=0,down=0,i=0
+        ,$idir = $("div.idir")
+        ,$ival = $("div.ival")
+        ,incr = function() { i++; $idir.show().html("+").fadeOut(); $ival.html(i); }
+        ,decr = function() { i--; $idir.show().html("-").fadeOut(); $ival.html(i); };
+    $("input.infinite").knob(
+                        {
+                        min : 0
+                        , max : 20
+                        , stopper : false
+                        , change : function () {
+                                        if(v > this.cv){
+                                            if(up){
+                                                decr();
+                                                up=0;
+                                            }else{up=1;down=0;}
+                                        } else {
+                                            if(v < this.cv){
+                                                if(down){
+                                                    incr();
+                                                    down=0;
+                                                }else{down=1;up=0;}
+                                            }
+                                        }
+                                        v = this.cv;
+                                    }
+                        });
+    });
+</script>
+<script src="{% static "js/isotop_ini.js" %}"></script>
+</body>
+</html>
